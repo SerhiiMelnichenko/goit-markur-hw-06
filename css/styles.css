@@ -205,9 +205,11 @@ background-size: cover;
 }
 
 .ul-solutions{
-    /* display: flex; */
-    width: 100%;
-    gap: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    /* gap: 24px; */
+    gap: 72px;
 }
     
 .solutions-subtitle{
@@ -221,6 +223,7 @@ background-size: cover;
     color:#2e2f42;
     margin-bottom: 8px;
     /* margin-top: 8px; */
+    text-align: center;
        
     }
 
@@ -230,11 +233,13 @@ background-size: cover;
         letter-spacing:0.02em;
         color:#434455;
         font-weight: 500;
+        
         }
 
 .li-solutions-list{
 /* flex-basis: calc((100% - 72px) / 4); */
 /* border-radius: 0px 0px 4px 4px; */
+width: 100%;
 }
 
 
@@ -823,10 +828,11 @@ justify-content: center;
 width: 736px;
 }
 
-.ul-solutions {display: flex;}
+
+.ul-solutions {gap: 72px 24px;}
 }
-
-
+.li-solutions-list { width:calc((100% - 24px) / 2);}
+.solutions-subtitle {text-align: left;}
 
 /*----------DESKTOP--------------*/
 @media screen and (min-width:1158px) {
@@ -834,6 +840,9 @@ width: 736px;
 width: 1158px;
 padding-left: 15px;
 padding-right: 15px;
+ }
+ .ul-solutions{
+    gap:24px;
  }
 .section-solution {
     padding-top: 120px;;
@@ -847,7 +856,8 @@ flex-basis: calc((100% - 72px) / 4);
     margin-top: 8px;
     font-weight: 500;
         font-size: 20px;
-        line-height: 1.2;}
+        line-height: 1.2;
+    }
 
 .solutions-list {font-wight: 400;}
 }
