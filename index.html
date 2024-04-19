@@ -55,16 +55,85 @@
         </address>
         <button type="button" class="menu-openmob-btn">
           <svg width="24" height="24">
-            <use href="./images/icons.svg#icon-menu-openmob-btn"
+            <use href="./images/icons.svg#icon-menu-openmob-btn"></use>
           </svg>
         </button>
+      </div>
+
+      <div class="mob-menu">
+        <button type="button" class="mob-modal-close-btn" data-modal-close>
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/symbol-defs.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <nav>
+          <ul class="mob-nav-link-list">
+            <li class="mob-nav-link-li">
+              <a class="mob-nav-link current" href="./index.html">Studio</a>
+            </li>
+            <li class="mob-nav-link-li">
+              <a class="mob-nav-link" href="">Portfolio</a>
+            </li>
+            <li class="mob-nav-link-li">
+              <a class="mob-nav-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="mob-address">
+          <ul class="mob-address-link-list">
+            <li class="mob-li-address-link">
+              <a
+                class="mob-address-link-mailto"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="mob-li-address-link">
+              <a class="mob-address-link-tel" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="mob-icon-list-team">
+          <li class="mob-icon-item-team">
+            <a href="" class="mob-icon-link-team">
+              <svg class="mob-icon-icon-team" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-icon-item-team">
+            <a href="" class="mob-icon-link-team">
+              <svg class="mob-icon-icon-team" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-icon-item-team">
+            <a href="" class="mob-icon-link-team">
+              <svg class="mob-icon-icon-team" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-icon-item-team">
+            <a href="" class="mob-icon-link-team">
+              <svg class="mob-icon-icon-team" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
     <main>
       <section class="service">
         <div class="container div-service">
           <h1 class="service-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="service-button">Order Service</button>
+          <button type="button" class="service-button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <section class="section-solution">
@@ -638,9 +707,9 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close-btn">
+        <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/symbol-defs.svg#icon-close-black"></use>
           </svg>
@@ -722,5 +791,6 @@
         </form>
       </div>
     </div>
+    <script src="./js/modal.js" type="module"></script>
   </body>
 </html>
