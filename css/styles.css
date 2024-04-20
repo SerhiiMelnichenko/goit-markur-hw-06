@@ -142,7 +142,8 @@ color: #404BBF;}
     color: #404BBF;
 }
 .menu-openmob-btn{
-    
+    display: block;
+    margin-left: auto;
 }
 /*----Modal-mob--------*/
 
@@ -156,18 +157,20 @@ padding-top: 20px;
 padding-bottom: 40px;
 padding-left: 16px;
 padding-right: 24px;
-}
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+overflow: auto;
+opacity: 0;
+visibility: hidden
+pointer-ivents:none;}
 
 .mob-modal-close-btn {
     display: block;
     margin-left: auto;
     margin-bottom: 24px;
+
 }
-
-.modal-close-icon {}
-
-
-.mob-nav-link-list {}
 
 .mob-nav-link-li:not(:last-child) {
     margin-bottom: 40px;}
@@ -179,21 +182,26 @@ padding-right: 24px;
     letter-spacing: 0.02em;
     color: #2e2f42;}
 
-.current {}
+.current {
+    color: #404bbf;
+    margin-top: 24px;
+}
 
 .mob-address {
     margin-bottom: 48px;
     margin-top: 168px;
 }
+.mob-address-link-list{
 
-.mob-address-link-list {}
+}
 
 .mob-address-link-mailto {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #4d5ae5;}
+    color: #4d5ae5;
+    }
 
 .mob-address-link-tel{ 
         font-weight: 500;
@@ -203,17 +211,13 @@ padding-right: 24px;
         color: #434455;
 }
 
-
-
-.mob-icon-list-team {}
-
-.mob-icon-item-team {}
-
-.mob-icon-link-team {}
-
-.mob-icon-icon-team {}
-
-
+.mob-icon-list-team {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+}
 
 
 
@@ -727,8 +731,10 @@ justify-content: center;}
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    width: 408px;
-    min-height: 584px;
+    /* width: 408px;
+    min-height: 584px; */
+    width: 288px;
+    height: 623px;
     background: #fcfcfc;
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -961,7 +967,8 @@ width: 736px;}
         .address {
             display: flex;}
         .menu-openmob-btn{display: none;}
-
+.menu-openmob-btn {
+    display: none;}
 /*----Service---*/
 .service {
     padding: 112px 0;
@@ -1022,6 +1029,10 @@ width: 584px;}
  width: 264px;} 
 .footer-input {
  width: 264px;}
+ .modal{
+    width: 408px;
+    height: 584px;
+ }
 
 }
 /*----------DESKTOP--------------*/
