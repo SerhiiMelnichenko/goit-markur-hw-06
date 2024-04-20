@@ -145,7 +145,8 @@ color: #404BBF;}
     display: block;
     margin-left: auto;
     border: none;
-        background-color: #fff;
+    background-color: #fff;
+    cursor: pointer;
 }
 /*----Modal-mob--------*/
 
