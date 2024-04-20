@@ -144,6 +144,8 @@ color: #404BBF;}
 .menu-openmob-btn{
     display: block;
     margin-left: auto;
+    border: none;
+        background-color: #fff;
 }
 /*----Modal-mob--------*/
 
@@ -166,11 +168,36 @@ visibility: hidden
 pointer-ivents:none;}
 
 .mob-modal-close-btn {
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-bottom: 24px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background-color: #e7e9fc;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 24px;
+    height: 24px;}
+.mob-modal-close-icon {}
 
+.mob-modal-close-btn:hover,
+.mob-modal-close-btn:focus {
+    background-color: #404BBF;
+    border: none;
 }
+
+.mob-modal-close-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-modal-close-btn:hover>.mob-modal-close-icon,
+.mob-modal-close-btn:focus>.mob-modal-close-icon {
+    fill: #ffff;
+}
+
+
 
 .mob-nav-link-li:not(:last-child) {
     margin-bottom: 40px;}
@@ -782,7 +809,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
             text-align: center;
             color: #2e2f42;
             height: 24px;
-            margin-top: 24px;
+            /* margin-top: 24px; */
             margin-bottom: 16px;
             text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     }
@@ -825,8 +852,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
             height: 56px;
             margin-top: 24px;
             margin-bottom: 24px;
-            margin-left: 95px;
-            margin-right: 96px;
+            margin: 0 auto;
             display: block;
             cursor: pointer;
             border: none;
@@ -881,6 +907,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
         display: flex;
         align-items: center;
         gap: 8px;
+        
 }
 
 .check-text span {
@@ -929,8 +956,14 @@ justify-content: center;
             letter-spacing: 0.04em;
             color: #8e8f99;
             display: block;
-            margin-bottom: 4px;}
+            margin-bottom: 4px;
+        
+    }
    
+        .modal-label {}
+    
+        .checkbox-text { min-width: 256px;}
+
 .checkbox-view {
             display: inline-flex;
             align-items: center;
@@ -969,6 +1002,7 @@ width: 736px;}
         .menu-openmob-btn{display: none;}
 .menu-openmob-btn {
     display: none;}
+    .mob-menu{display: none;}
 /*----Service---*/
 .service {
     padding: 112px 0;
@@ -1033,7 +1067,9 @@ width: 584px;}
     width: 408px;
     height: 584px;
  }
+  
 
+ . 
 }
 /*----------DESKTOP--------------*/
 
